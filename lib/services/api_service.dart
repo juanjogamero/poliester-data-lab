@@ -42,7 +42,13 @@ class ApiService {
       final response = await http.post(
         Uri.parse('$_baseUrl/posts'),
         headers: {'Content-Type': 'application/json'},
-        body: json.encode(pedidoData),
+        // Endpoint publico de PRUEBAS: nunca enviamos identificadores ni datos reales.
+        // El argumento se conserva por compatibilidad con la pantalla actual.
+        body: json.encode({
+          'title': 'Pedido de prueba',
+          'body': 'Solicitud ficticia desde el laboratorio de integraciones',
+          'userId': 1,
+        }),
       );
       if (response.statusCode == 201) {
         return true;
