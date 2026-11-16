@@ -234,13 +234,13 @@ class _PedidosScreenState extends State<PedidosScreen> {
                             Icons.cloud_upload,
                             color: Colors.blue,
                           ),
-                          tooltip: 'Enviar a ERP Externo',
+                          tooltip: 'Probar envío HTTP con datos ficticios',
                           onPressed: () async {
                             // Mostramos carga
                             ScaffoldMessenger.of(context).showSnackBar(
                               const SnackBar(
                                 content: Text(
-                                  'Enviando datos a servidor externo...',
+                                  'Ejecutando prueba HTTP con datos ficticios...',
                                 ),
                               ),
                             );
@@ -265,14 +265,14 @@ class _PedidosScreenState extends State<PedidosScreen> {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
                                   content: Text(
-                                    '✅ ¡Pedido sincronizado con la nube!',
+                                    'Prueba HTTP 201 correcta. No se ha sincronizado ningún ERP.',
                                   ),
                                 ),
                               );
                             } else {
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
-                                  content: Text('❌ Error al sincronizar'),
+                                  content: Text('Error en la prueba del servicio HTTP'),
                                 ),
                               );
                             }
