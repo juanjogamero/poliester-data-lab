@@ -10,7 +10,7 @@
 
 **Aplicación académica de gestión comercial, persistencia de datos e integraciones HTTP.**
 
-[Demo web interactiva (GitHub Pages)](https://juanjogamero.github.io/gestor_poliester/) · [Código de la demo](docs/index.html) · [Depofibra](https://depofibra.com/)
+[Demo web interactiva (GitHub Pages)](https://juanjogamero.github.io/poliester-data-lab/) · [Código de la demo](docs/index.html) · [Depofibra](https://depofibra.com/)
 </div>
 
 ---
@@ -26,7 +26,7 @@ El código Flutter incluye autenticación con Google, CRUD de productos, cliente
 
 ## Explorar en el navegador
 
-La [demo web](https://juanjogamero.github.io/gestor_poliester/) permite probar la interfaz sin instalar Flutter ni configurar Google Sign-In:
+La [demo web](https://juanjogamero.github.io/poliester-data-lab/) permite probar la interfaz sin instalar Flutter ni configurar Google Sign-In:
 
 | Módulo | Qué se puede hacer |
 | --- | --- |
@@ -92,7 +92,7 @@ Abre `http://localhost:8000`.
 **Aplicación Flutter:**
 
 ```bash
-git clone https://github.com/juanjogamero/gestor_poliester.git
+git clone https://github.com/juanjogamero/poliester-data-lab.git
 cd gestor_poliester
 flutter pub get
 flutter analyze
@@ -111,7 +111,7 @@ La demo se sirve desde `docs/` con el workflow `.github/workflows/pages.yml`.
 3. Abre **Actions → Deploy DataLab demo to GitHub Pages** y ejecuta el workflow en `main`.
 4. Comprueba que el despliegue finaliza correctamente antes de compartir la URL.
 
-Si decides cambiar el nombre del repositorio a **`poliester-data-lab`**, actualiza el enlace de Pages a `https://juanjogamero.github.io/poliester-data-lab/` y el de clonación al nuevo nombre. GitHub no publica automáticamente el sitio solo por existir este workflow.
+El repositorio ya se llama **`poliester-data-lab`**. La demo estará disponible en `https://juanjogamero.github.io/poliester-data-lab/` cuando GitHub Pages esté habilitado y el despliegue finalice correctamente.
 
 ## Aspectos a reforzar antes de un uso real
 
